@@ -1,6 +1,6 @@
 @csrf
 <label class="uppercase text-indigo-700 text-xs">Titulo</label>
-<input type="text" mane="title" class="rounded border-indigo-200 w-full mb-4" value="{{$post->title}}">
+<input type="text" name="title" class="rounded border-indigo-200 w-full mb-4" value="{{$post->title}}">
 
 <label class="uppercase text-indigo-700 text-xs">Contenido</label>
 <textarea name="body" rows="5" class="rounded border-indigo-200 w-full mb-4">{{$post->body}}</textarea>

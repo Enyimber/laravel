@@ -22,11 +22,11 @@ class PostController extends Controller
     public function store(Request $request){
 
         $post= $request->user()->posts()->create([
-            'title' => $title = $request->title,
-            'slug' => Str::slug($title),
+            'title' => $request->title,
+            'slug' => Str::slug($request->title),
             'body' => $request->body,
         ]);
-        return redirect()->route('post.edit',$post);
+        return redirect()->route('posts.edit',$post);
     }
 
 
